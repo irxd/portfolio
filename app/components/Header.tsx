@@ -15,16 +15,16 @@ export default function Header() {
           <div className="flex-grow mx-2 h-[1px] bg-white"></div>
           <nav className="space-x-6">
             <a
-              href="#works"
-              className={twMerge("text-white text-xl hover:text-gray-300 transition-colors duration-200", redaction.className)}
-            >
-              Works
-            </a>
-            <a
               href="#about"
               className={twMerge("text-white text-xl hover:text-gray-300 transition-colors duration-200", redaction.className)}
             >
               About
+            </a>
+            <a
+              href="#works"
+              className={twMerge("text-white text-xl hover:text-gray-300 transition-colors duration-200", redaction.className)}
+            >
+              Works
             </a>
             <a
               href="#contact"
