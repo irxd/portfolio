@@ -45,8 +45,8 @@ export default function Hero() {
   }
 
   return (
-    <div className="min-h-screen flex container mx-auto bg-black">
-      <div className="flex flex-col flex-grow justify-center mix-blend-difference text-white relative z-10 pointer-events-none">
+    <div className="min-h-screen flex bg-black">
+      <div className="container mx-auto flex flex-col flex-grow justify-center mix-blend-difference text-white relative z-10 pointer-events-none">
         <p className={twMerge(
           redaction35Italic.className,
           "text-6xl leading-18 tracking-tight"
