@@ -1,5 +1,5 @@
-import { twMerge } from 'tailwind-merge';
 import localFont from 'next/font/local';
+import { twMerge } from 'tailwind-merge';
 
 const redaction = localFont({
   src: '../fonts/Redaction-Regular.woff2'
