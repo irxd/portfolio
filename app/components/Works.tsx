@@ -53,7 +53,7 @@ export default function Works() {
                 <div>React ▪ React Native ▪ Vue.js ▪ Typescript ▪ Jest ▪ React Native Testing Library</div>
               </div>
               <div className="flex flex-row space-x-2">
-                <div className="w-1/2">
+                <div className="w-1/3">
                   <Image
                     width={600}
                     height={300}
@@ -62,12 +62,21 @@ export default function Works() {
                     className="w-full h-auto"
                   />
                 </div>
-                <div className="w-1/2">
+                <div className="w-1/3">
                   <Image
                     width={600}
                     height={400}
                     src="/images/fm-2.png"
                     alt="First Media Project 2"
+                    className="w-full h-auto"
+                  />
+                </div>
+                <div className="w-1/3">
+                  <Image
+                    width={600}
+                    height={400}
+                    src="/images/fm-3.png"
+                    alt="First Media Project 3"
                     className="w-full h-auto"
                   />
                 </div>
