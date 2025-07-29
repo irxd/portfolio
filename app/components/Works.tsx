@@ -32,11 +32,11 @@ export default function Works() {
               <div>2025</div>
             </div>
             <div className="space-y-4 text-sm">
-              <div className="text-[#cacaca]">
+              <div className="text-[#cacaca] md:max-w-1/2">
                 Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
               </div>
-              <div className="space-y-4 mt-8 mb-8">
-                <div className="md:max-w-1/2">
+              <div className="space-y-4 mt-8 mb-8 md:max-w-1/2">
+                <div>
                   It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution.
                 </div>
                 <div>Fullstack</div>
@@ -83,11 +83,11 @@ export default function Works() {
               <div>2024</div>
             </div>
             <div className="space-y-4 text-sm">
-              <div className="text-[#cacaca]">
+              <div className="text-[#cacaca] md:max-w-1/2">
                 Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
               </div>
-              <div className="space-y-4 mt-8 mb-8">
-                <div className="md:max-w-1/2">
+              <div className="space-y-4 mt-8 mb-8 md:max-w-1/2">
+                <div>
                   It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution.
                 </div>
                 <div>Fullstack</div>
