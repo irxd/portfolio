@@ -49,22 +49,22 @@ export default function Hero() {
     <div className="min-h-screen flex flex-col">
       <Header />
       <div className="flex-grow flex justify-center">
-        <div className="container mx-auto mix-blend-difference text-white relative z-10 pointer-events-none flex-grow justify-center flex flex-col">
+        <div className="container mx-auto mix-blend-difference text-white relative z-10 pointer-events-none flex-grow justify-center flex flex-col px-4 sm:px-0">
           <p className={twMerge(
             redaction35Italic.className,
-            "text-6xl leading-18 tracking-tight"
+            "text-3xl md:text-6xl leading-10 md:leading-18 tracking-tight"
           )}>
             Fullstack Engineer
           </p>
           <p className={twMerge(
             redaction20.className,
-            "text-6xl leading-18 tracking-tight"
+            "text-3xl md:text-6xl leading-10 md:leading-18 tracking-tight"
           )}>
             Who Cares About Design
           </p>
           <p className={twMerge(
             redaction.className,
-            "text-6xl leading-18 tracking-tight"
+            "text-3xl md:text-6xl leading-10 md:leading-18 tracking-tight"
           )}>
             and Meaningful User Experience
           </p>

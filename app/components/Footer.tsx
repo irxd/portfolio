@@ -13,11 +13,11 @@ export default function Footer() {
       style={{ clipPath: "polygon(0% 0, 100% 0%, 100% 100%, 0 100%)" }}
     >
       <div className='fixed bottom-0 h-[240px] w-full'>
-        <div className="py-16 bg-white text-black tracking-tight">
-          <div className="container mx-auto flex items-center">
+        <div className="py-20 md:py16 bg-white text-black tracking-tight">
+          <div className="container mx-auto flex items-center px-4 sm:px-0">
             <h1 className={
               twMerge(
-                "text-6xl",
+                "text-3xl md:text-6xl",
                 redaction35Italic.className
               )}
             >
@@ -25,7 +25,7 @@ export default function Footer() {
             </h1>
             <div className="flex-grow ml-6 h-[1px] bg-black" />
           </div>
-          <div className="container mx-auto flex items-center mt-6 text-lg text-black">
+          <div className="container mx-auto flex items-center mt-6 text-lg text-black px-4 sm:px-0">
             <div className='flex flex-row space-x-6'>
               <a href="#mail">
                 Mail
