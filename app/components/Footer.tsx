@@ -13,7 +13,7 @@ export default function Footer() {
       style={{ clipPath: "polygon(0% 0, 100% 0%, 100% 100%, 0 100%)" }}
     >
       <div className='fixed bottom-0 h-[240px] w-full'>
-        <div className="py-20 md:py16 bg-white text-black tracking-tight">
+        <div className="py-20 md:py16 bg-foreground text-black tracking-tight">
           <div className="container mx-auto flex items-center px-4 sm:px-0">
             <h1 className={
               twMerge(
@@ -23,7 +23,7 @@ export default function Footer() {
             >
               Let's Connect
             </h1>
-            <div className="flex-grow ml-6 h-[1px] bg-black" />
+            <div className="flex-grow ml-6 h-[1px] bg-background" />
           </div>
           <div className="container mx-auto flex items-center mt-6 text-sm md:text-md text-black px-4 sm:px-0">
             <div className='flex flex-row space-x-6'>
@@ -37,8 +37,8 @@ export default function Footer() {
                 LinkedIn
               </a>
             </div>
-            <div className="flex-grow mx-6 h-[1px] bg-black" />
-            <p className="">©2025</p>
+            <div className="flex-grow mx-6 h-[1px] bg-background" />
+            <p className="">©{new Date().getFullYear()}</p>
           </div>
         </div>
       </div>

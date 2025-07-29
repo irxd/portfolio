@@ -46,7 +46,7 @@ export default function Hero() {
   }
 
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col bg-background">
       <Header />
       <div className="flex-grow flex justify-center">
         <div className="container mx-auto mix-blend-difference text-white relative z-10 pointer-events-none flex-grow justify-center flex flex-col px-4 sm:px-0">
