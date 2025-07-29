@@ -13,11 +13,11 @@ export default function Footer() {
       style={{ clipPath: "polygon(0% 0, 100% 0%, 100% 100%, 0 100%)" }}
     >
       <div className='fixed bottom-0 h-[240px] w-full'>
-        <div className="py-16 bg-white text-black">
+        <div className="py-16 bg-white text-black tracking-tight">
           <div className="container mx-auto flex items-center">
             <h1 className={
               twMerge(
-                "text-6xl font-normal tracking-tight",
+                "text-6xl",
                 redaction35Italic.className
               )}
             >
@@ -25,26 +25,17 @@ export default function Footer() {
             </h1>
             <div className="flex-grow ml-6 h-[1px] bg-black" />
           </div>
-          <div className="container mx-auto flex items-center mt-4">
-            <p className="text-xl font-normal tracking-tight">©2025</p>
+          <div className="container mx-auto flex items-center mt-6 text-lg text-black">
+            <p className="">©2025</p>
             <div className="flex-grow mx-6 h-[1px] bg-black" />
             <div className='flex flex-row space-x-6'>
-              <a
-                href="#mail"
-                className="text-black text-xl hover:text-gray-300 transition-colors duration-200 tracking-tight"
-              >
+              <a href="#mail">
                 Mail
               </a>
-              <a
-                href="#github"
-                className="text-black text-xl hover:text-gray-300 transition-colors duration-200 tracking-tight"
-              >
+              <a href="#github">
                 Github
               </a>
-              <a
-                href="#linkedin"
-                className="text-black text-xl hover:text-gray-300 transition-colors duration-200 tracking-tight"
-              >
+              <a href="#linkedin">
                 LinkedIn
               </a>
             </div>
