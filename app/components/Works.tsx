@@ -10,7 +10,7 @@ export default function Works() {
 
   return (
     <div className="min-h-screen bg-black text-white relative">
-      <div className="container mx-auto pb-64">
+      <div className="container mx-auto pb-64 pt-32">
         <div className="flex items-center">
           <h1 className={
             twMerge(
@@ -22,7 +22,7 @@ export default function Works() {
           </h1>
           <div className="flex-grow ml-6 h-[1px] bg-white" />
         </div>
-        <div className="space-y-12">
+        <div className="space-y-32">
           <div>
             <div
               className="flex items-center mt-24 text-xl"
