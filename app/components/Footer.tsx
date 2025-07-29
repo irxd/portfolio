@@ -12,7 +12,7 @@ export default function Footer() {
       className='relative h-[240px]'
       style={{ clipPath: "polygon(0% 0, 100% 0%, 100% 100%, 0 100%)" }}
     >
-      <div className='fixed bottom-0 h-[240px] w-full'>
+      <footer className='fixed bottom-0 h-[240px] w-full'>
         <div className="py-20 md:py16 bg-foreground text-black tracking-tight">
           <div className="container mx-auto flex items-center px-4 sm:px-0">
             <h1 className={
@@ -41,7 +41,7 @@ export default function Footer() {
             <p className="">©{new Date().getFullYear()}</p>
           </div>
         </div>
-      </div>
-    </div >
+      </footer>
+    </div>
   );
 }

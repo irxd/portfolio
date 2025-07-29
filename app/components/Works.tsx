@@ -26,7 +26,7 @@ export default function Works() {
         </div>
         <div className="space-y-16 md:space-y-32 mt-16 md:mt-24">
           {selectedWorks.map((work) => (
-            <div key={work.id}>
+            <article key={work.id}>
               <WorkTitle
                 company={work.company}
                 year={work.year}
@@ -38,7 +38,7 @@ export default function Works() {
                 stack={work.stack}
                 images={work.images}
               />
-            </div>
+            </article>
           ))}
         </div>
       </div>

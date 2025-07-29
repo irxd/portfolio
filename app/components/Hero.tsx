@@ -48,8 +48,8 @@ export default function Hero() {
   return (
     <div className="min-h-screen flex flex-col bg-background">
       <Header />
-      <div className="flex-grow flex justify-center">
-        <div className="container mx-auto mix-blend-difference text-white relative z-10 pointer-events-none flex-grow justify-center flex flex-col px-4 sm:px-0">
+      <section className="flex-grow flex justify-center">
+        <h1 className="container mx-auto mix-blend-difference text-white relative z-10 pointer-events-none flex-grow justify-center flex flex-col px-4 sm:px-0">
           <p className={twMerge(
             redaction35Italic.className,
             "text-3xl md:text-6xl leading-10 md:leading-18 tracking-tight"
@@ -68,7 +68,7 @@ export default function Hero() {
           )}>
             and Meaningful User Experience
           </p>
-        </div>
+        </h1>
 
         <div className="flex h-full w-full overflow-hidden absolute">
           {
@@ -81,7 +81,7 @@ export default function Hero() {
             })
           }
         </div>
-      </div>
+      </section>
     </div>
   );
 }

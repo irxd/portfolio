@@ -17,15 +17,15 @@ export default function WorkDescription({
 }: WorkDescriptionProps) {
   return (
     <div className="space-y-4 text-sm">
-      <div className="text-[#cacaca] md:max-w-1/2">
+      <p className="text-[#cacaca] md:max-w-1/2">
         {companyDescription}
-      </div>
+      </p>
       <div className="space-y-4 mt-8 mb-8 md:max-w-1/2">
-        <div>
+        <p>
           {workDescription}
-        </div>
-        <div>{position}</div>
-        <div>{stack}</div>
+        </p>
+        <p>{position}</p>
+        <p>{stack}</p>
       </div>
       <div className="flex flex-col md:flex-row gap-4">
         {images.map(image => (
