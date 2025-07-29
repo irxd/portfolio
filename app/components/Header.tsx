@@ -1,9 +1,3 @@
-import localFont from 'next/font/local';
-
-const redaction = localFont({
-  src: '../fonts/Redaction-Regular.woff2'
-});
-
 export default function Header() {
   return (
     <>

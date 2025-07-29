@@ -51,7 +51,7 @@ export default function Hero() {
           redaction35Italic.className,
           "text-6xl leading-18 tracking-tight"
         )}>
-          Full Stack Engineer
+          Fullstack Engineer
         </p>
         <p className={twMerge(
           redaction20.className,
