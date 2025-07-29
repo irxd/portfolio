@@ -8,9 +8,9 @@ export default function WorkTitle({ company, year }: WorkTitleProps) {
     <div
       className="flex items-center text-md"
     >
-      <div>First Media</div>
+      <div>{company}</div>
       <div className="flex-grow mx-6 h-[1px] bg-foreground" />
-      <div>2025</div>
+      <div>{year}</div>
     </div>
   );
 }
