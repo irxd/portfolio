@@ -29,7 +29,7 @@ export default function WorkDescription({
       </div>
       <div className="flex flex-col md:flex-row gap-4">
         {images.map(image => (
-          <div className="w-full md:w-1/3">
+          <div key={image.id} className="w-full md:w-1/3">
             <Image
               width={600}
               height={300}
