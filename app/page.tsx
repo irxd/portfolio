@@ -8,13 +8,7 @@ export default function Home() {
       <Header />
       <Hero />
       <div className="min-h-screen bg-white text-black">
-        About
-      </div>
-      <div className="min-h-screen bg-white text-black">
-        About
-      </div>
-      <div className="min-h-screen bg-white text-black">
-        Works
+        <div className="container mx-auto">works</div>
       </div>
       <Footer />
     </>

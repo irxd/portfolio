@@ -9,7 +9,7 @@ export default function Header() {
   return (
     <>
       <div className="h-16"></div>
-      <div className="bg-background py-6 sticky top-0 z-50 transition-all duration-200">
+      <div className="py-6 sticky top-0 z-10 mix-blend-difference transition-all duration-200">
         <div className="container mx-auto flex items-center">
           <h1 className={twMerge("text-white text-xl font-normal", redaction.className)}>Muhammad Irsyad</h1>
           <div className="flex-grow mx-6 h-[1px] bg-white"></div>
