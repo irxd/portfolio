@@ -1,6 +1,13 @@
 import type { Metadata } from "next";
+import { Geist } from "next/font/google";
 import SmoothScroll from "./components/SmoothScroll";
 import "./globals.css";
+
+
+const geistSans = Geist({
+  variable: "--font-geist-sans",
+  subsets: ["latin"],
+})
 
 export const metadata: Metadata = {
   title: "Muhammad Irsyad - Full Stack Engineer",
@@ -14,7 +21,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="antialiased">
+      <body
+        className={`${geistSans.variable} antialiased`}
+      >
         <SmoothScroll />
         {children}
       </body>
