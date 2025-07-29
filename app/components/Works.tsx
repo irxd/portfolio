@@ -11,7 +11,7 @@ export default function Works() {
   return (
     <div className="min-h-screen bg-black text-white relative">
       <div className="container mx-auto pb-64 pt-32">
-        <div className="flex items-center">
+        <div className="flex items-center sticky top-16 mix-blend-difference">
           <h1 className={
             twMerge(
               "text-6xl",
