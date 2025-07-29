@@ -25,14 +25,14 @@ export default function Works() {
         <div className="space-y-16 md:space-y-32 mt-16 md:mt-24">
           <div>
             <div
-              className="flex items-center text-xl"
+              className="flex items-center text-md"
             >
               <div>First Media</div>
               <div className="flex-grow mx-6 h-[1px] bg-white" />
               <div>2025</div>
             </div>
-            <div className="space-y-4">
-              <div className="text-sm text-[#cacaca]">
+            <div className="space-y-4 text-sm">
+              <div className="text-[#cacaca]">
                 Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
               </div>
               <div className="space-y-4 mt-8 mb-8">
@@ -76,14 +76,14 @@ export default function Works() {
 
           <div>
             <div
-              className="flex items-center text-xl"
+              className="flex items-center text-md"
             >
               <div>Parcel Daily</div>
               <div className="flex-grow mx-6 h-[1px] bg-white" />
               <div>2024</div>
             </div>
-            <div className="space-y-4">
-              <div className="text-sm text-[#cacaca]">
+            <div className="space-y-4 text-sm">
+              <div className="text-[#cacaca]">
                 Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
               </div>
               <div className="space-y-4 mt-8 mb-8">
