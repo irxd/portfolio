@@ -3,7 +3,7 @@ export default function Header() {
     e.preventDefault();
     const element = document.getElementById(id);
     if (element) {
-      // @ts-ignore
+      // @ts-expect-error
       window.lenis?.scrollTo(element, { offset: 0 });
     }
   };
