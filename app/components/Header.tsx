@@ -1,4 +1,13 @@
 export default function Header() {
+  const handleScroll = (e: React.MouseEvent<HTMLAnchorElement>, id: string) => {
+    e.preventDefault();
+    const element = document.getElementById(id);
+    if (element) {
+      // @ts-ignore
+      window.lenis?.scrollTo(element, { offset: 0 });
+    }
+  };
+
   return (
     <>
       <div className="h-16"></div>
@@ -7,10 +16,10 @@ export default function Header() {
           <p>Muhammad Irsyad</p>
           <div className="flex-grow mx-6 h-[1px] bg-foreground"></div>
           <nav className="space-x-6">
-            <a href="#works">
+            <a className="cursor-pointer" onClick={(e) => handleScroll(e, 'works')}>
               Works
             </a>
-            <a href="#contact">
+            <a className="cursor-pointer" onClick={(e) => handleScroll(e, 'contact')}>
               Contact
             </a>
           </nav>
