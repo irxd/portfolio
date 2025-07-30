@@ -21,7 +21,7 @@ export default function Footer() {
                 redaction35Italic.className
               )}
             >
-              Let's Connect
+              {`Let's Connect`}
             </h1>
             <div className="flex-grow ml-6 h-[1px] bg-background" />
           </div>
