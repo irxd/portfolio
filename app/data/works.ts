@@ -3,13 +3,11 @@ export const selectedWorks = [
     id: 1,
     company: "First Media",
     year: "2025",
-    companyDescription:
-      "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+    companyDescription: "Internet provider, Indonesia",
     workDescription:
-      "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution",
+      "Developed and maintained firstmedia main website, revamped key promotional pages including homepage, resulting in improved performance and user experience. Enhanced multiple modules within custom internal CMS, supporting internal staff and marketing needs.",
     position: "Fullstack",
-    stack:
-      "React ▪ React Native ▪ Vue.js ▪ Typescript ▪ Jest ▪ React Native Testing Library",
+    stack: "React ▪ Next ▪ Typescript ▪ Jest ▪ Nest ▪ Redis ▪ Docker",
     images: [
       {
         id: 1,
@@ -32,13 +30,11 @@ export const selectedWorks = [
     id: 2,
     company: "Parcel Daily",
     year: "2024",
-    companyDescription:
-      "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+    companyDescription: "Delivery platform, Malaysia",
     workDescription:
-      "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution",
-    position: "Fullstack",
-    stack:
-      "React ▪ React Native ▪ Vue.js ▪ Typescript ▪ Jest ▪ React Native Testing Library",
+      "Collaborated with internal team to revamp the customer platform. Migrating features from vue to react codebase, improving overall user experience and increasing customer satisfaction by addressing pain points in the legacy platform.",
+    position: "Frontend",
+    stack: "React ▪ Vue ▪ Next ▪ Typescript",
     images: [
       {
         id: 1,

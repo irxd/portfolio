@@ -16,7 +16,7 @@ export default function WorkDescription({
   companyDescription, workDescription, position, stack, images
 }: WorkDescriptionProps) {
   return (
-    <div className="space-y-4 text-sm">
+    <div className="space-y-4 text-sm md:text-base">
       <p className="text-[#cacaca] md:max-w-1/2">
         {companyDescription}
       </p>

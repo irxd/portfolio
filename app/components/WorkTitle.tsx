@@ -6,7 +6,7 @@ interface WorkTitleProps {
 export default function WorkTitle({ company, year }: WorkTitleProps) {
   return (
     <div
-      className="flex items-center text-md"
+      className="flex items-center text-base font-bold tracking-tight"
     >
       <h2>{company}</h2>
       <div className="flex-grow mx-6 h-[1px] bg-foreground" />
