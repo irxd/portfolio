@@ -10,7 +10,7 @@ const SmoothScroll = () => {
       easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t))
     })
 
-    // @ts-expect-error
+    // @ts-expect-error Lenis already make this global
     window.lenis = lenis
 
     function raf(time: number) {

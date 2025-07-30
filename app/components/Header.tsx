@@ -3,7 +3,7 @@ export default function Header() {
     e.preventDefault();
     const element = document.getElementById(id);
     if (element) {
-      // @ts-expect-error
+      // @ts-expect-error Lenis already make this global
       window.lenis?.scrollTo(element, { offset: 0 });
     }
   };
