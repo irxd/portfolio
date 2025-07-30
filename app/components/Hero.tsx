@@ -13,10 +13,6 @@ const redaction20 = localFont({
   src: '../fonts/Redaction_20-Regular.woff2',
 });
 
-const redaction = localFont({
-  src: '../fonts/Redaction-Regular.woff2',
-});
-
 export default function Hero() {
   const [windowsWidth, setWindowsWidth] = useState(0);
 
@@ -60,13 +56,7 @@ export default function Hero() {
             redaction20.className,
             "text-3xl md:text-6xl leading-10 md:leading-18 tracking-tight"
           )}>
-            Who Cares About Design
-          </p>
-          <p className={twMerge(
-            redaction.className,
-            "text-3xl md:text-6xl leading-10 md:leading-18 tracking-tight"
-          )}>
-            and Meaningful User Experience
+            With a Strong Focus on Frontend
           </p>
         </h1>
 
