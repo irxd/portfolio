@@ -3,7 +3,6 @@
 import localFont from 'next/font/local';
 import { useEffect, useState } from 'react';
 import { twMerge } from 'tailwind-merge';
-import Header from './Header';
 
 const redaction35Italic = localFont({
   src: '../fonts/Redaction_35-Italic.woff2',
@@ -43,7 +42,6 @@ export default function Hero() {
 
   return (
     <div className="min-h-screen flex flex-col bg-background">
-      <Header />
       <section className="flex-grow flex justify-center">
         <h1 className="container mx-auto mix-blend-difference text-white relative z-10 pointer-events-none flex-grow justify-center flex flex-col px-4 sm:px-0">
           <p className={twMerge(
