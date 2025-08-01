@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { Geist } from "next/font/google";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
 import SmoothScroll from "./components/SmoothScroll";
 import "./globals.css";
 
@@ -25,7 +27,9 @@ export default function RootLayout({
         className={`${geistSans.variable} antialiased`}
       >
         <SmoothScroll />
+        <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );
