@@ -1,19 +1,26 @@
-"use client";
+'use client'
 
-import gsap from 'gsap';
-import ScrollTrigger from 'gsap/ScrollTrigger';
-import { useEffect, useRef } from 'react';
-
+import gsap from 'gsap'
+import ScrollTrigger from 'gsap/ScrollTrigger'
+import { useEffect, useRef } from 'react'
+import { twMerge } from 'tailwind-merge'
 interface WorkTitleProps {
-  company: string;
-  year: string;
+  company: string
+  year: string
+  onClick?: () => void
+  isButton: boolean
 }
 
-export default function WorkTitle({ company, year }: WorkTitleProps) {
-  const lineRef = useRef<HTMLDivElement>(null);
+export default function WorkTitle({
+  company,
+  year,
+  onClick,
+  isButton,
+}: WorkTitleProps) {
+  const lineRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
-    gsap.registerPlugin(ScrollTrigger);
+    gsap.registerPlugin(ScrollTrigger)
 
     if (lineRef.current) {
       gsap.fromTo(
@@ -28,19 +35,26 @@ export default function WorkTitle({ company, year }: WorkTitleProps) {
           scrollTrigger: {
             trigger: lineRef.current,
             start: 'top bottom-=100',
-            toggleActions: 'play none none none'
-          }
-        }
-      );
+            toggleActions: 'play none none none',
+          },
+        },
+      )
     }
-  }, []);
+  }, [])
   return (
-    <div
-      className="flex items-center text-base font-bold tracking-tight"
+    <button
+      onClick={onClick}
+      className={twMerge(
+        'flex w-full items-center text-base font-bold tracking-tight',
+        isButton ? 'cursor-pointer' : '',
+      )}
     >
-      <h2>{company}</h2>
-      <div ref={lineRef} className="flex-grow mx-6 h-[1px] bg-foreground origin-left" />
+      <h2 className="text-left">{company}</h2>
+      <div
+        ref={lineRef}
+        className="flex-grow mx-6 h-[1px] bg-foreground origin-left"
+      />
       <p>{year}</p>
-    </div>
-  );
+    </button>
+  )
 }
