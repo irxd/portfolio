@@ -1,17 +1,17 @@
-"use client"
+'use client'
 
-import gsap from "gsap"
-import ScrollTrigger from "gsap/ScrollTrigger"
-import localFont from "next/font/local"
-import { useEffect, useRef, useState } from "react"
-import { twMerge } from "tailwind-merge"
-import Container from "../components/Container"
-import WorkDescription from "../components/WorkDescription"
-import WorkTitle from "../components/WorkTitle"
-import { allWorks } from "../data/works"
+import gsap from 'gsap'
+import ScrollTrigger from 'gsap/ScrollTrigger'
+import localFont from 'next/font/local'
+import { useEffect, useRef, useState } from 'react'
+import { twMerge } from 'tailwind-merge'
+import Container from '../components/Container'
+import WorkDescription from '../components/WorkDescription'
+import WorkTitle from '../components/WorkTitle'
+import { allWorks } from '../data/works'
 
 const redaction35Italic = localFont({
-  src: "../fonts/Redaction_35-Italic.woff2",
+  src: '../fonts/Redaction_35-Italic.woff2',
 })
 
 export default function AllWorks() {
@@ -30,11 +30,11 @@ export default function AllWorks() {
         {
           scaleX: 1,
           duration: 1.5,
-          ease: "power3.inOut",
+          ease: 'power3.inOut',
           scrollTrigger: {
             trigger: lineRef.current,
-            start: "top bottom-=100",
-            toggleActions: "play none none none",
+            start: 'top bottom-=100',
+            toggleActions: 'play none none none',
           },
         },
       )
@@ -44,12 +44,12 @@ export default function AllWorks() {
   return (
     <Container>
       <div className="flex items-center">
-        <h1 className={twMerge("text-3xl md:text-6xl", redaction35Italic.className)}>
+        <h1 className={twMerge('text-3xl md:text-6xl', redaction35Italic.className)}>
           All Works
         </h1>
         <div
           ref={lineRef}
-          className="flex-grow ml-6 h-[1px] bg-foreground origin-left"
+          className="flex-grow ml-6 h-[1px] bg-[#777777] origin-left"
         />
       </div>
       <div className="space-y-8 md:space-y-8 mt-16 md:mt-24">
@@ -62,6 +62,7 @@ export default function AllWorks() {
                 setActiveWorkId(activeWorkId === work.id ? null : work.id)
               }
               isButton={true}
+              isActive={activeWorkId === work.id}
             />
             <WorkDescription
               companyDescription={work.companyDescription}

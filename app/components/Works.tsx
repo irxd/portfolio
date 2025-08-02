@@ -48,13 +48,18 @@ export default function Works() {
         </h1>
         <div
           ref={lineRef}
-          className="flex-grow ml-6 h-[1px] bg-foreground origin-left"
+          className="flex-grow ml-6 h-[1px] bg-[#777777] origin-left"
         />
       </div>
       <div className="space-y-16 md:space-y-32 mt-16 md:mt-24">
         {selectedWorks.map((work) => (
           <article key={work.id}>
-            <WorkTitle company={work.company} year={work.year} isButton={false} />
+            <WorkTitle
+              company={work.company}
+              year={work.year}
+              isButton={false}
+              isActive={false}
+            />
             <WorkDescription
               companyDescription={work.companyDescription}
               workDescription={work.workDescription}

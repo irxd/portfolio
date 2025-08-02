@@ -9,6 +9,7 @@ interface WorkTitleProps {
   year: string
   onClick?: () => void
   isButton: boolean
+  isActive: boolean
 }
 
 export default function WorkTitle({
@@ -16,6 +17,7 @@ export default function WorkTitle({
   year,
   onClick,
   isButton,
+  isActive,
 }: WorkTitleProps) {
   const lineRef = useRef<HTMLDivElement>(null)
 
@@ -45,16 +47,23 @@ export default function WorkTitle({
     <button
       onClick={onClick}
       className={twMerge(
-        'flex w-full items-center text-base font-bold tracking-tight',
+        'flex w-full items-center text-base tracking-tight',
         isButton ? 'cursor-pointer' : '',
       )}
     >
-      <h2 className="text-left">{company}</h2>
+      <h2
+        className={twMerge('text-left', isActive ? 'font-semibold' : 'font-normal')}
+      >
+        {company}
+      </h2>
       <div
         ref={lineRef}
-        className="flex-grow mx-6 h-[1px] bg-foreground origin-left"
+        className={twMerge(
+          'flex-grow mx-6 h-[1px] origin-left',
+          isActive ? 'bg-foreground' : 'bg-[#777777]',
+        )}
       />
-      <p>{year}</p>
+      <p className={isActive ? 'font-semibold' : 'font-normal'}>{year}</p>
     </button>
   )
 }
