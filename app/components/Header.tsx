@@ -34,7 +34,7 @@ export default function Header() {
 
   return (
     <>
-      <header className="py-6 fixed top-0 z-20 px-4 sm:px-0 w-full bg-black">
+      <header className="py-6 fixed top-0 z-20 px-4 sm:px-0 w-full mix-blend-difference">
         <div className="container mx-auto flex items-center text-sm md:text-lg tracking-tight text-white">
           <Link href="/">Muhammad Irsyad</Link>
           <div
