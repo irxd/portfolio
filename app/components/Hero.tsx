@@ -48,13 +48,13 @@ export default function Hero() {
             redaction35Italic.className,
             "text-3xl md:text-6xl leading-10 md:leading-18 tracking-tight"
           )}>
-            Fullstack Engineer
+            Software Engineer
           </p>
           <p className={twMerge(
             redaction20.className,
             "text-3xl md:text-6xl leading-10 md:leading-18 tracking-tight"
           )}>
-            With a Strong Focus on Frontend
+            Specializing in Frontend Development
           </p>
         </h1>
 

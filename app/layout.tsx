@@ -12,8 +12,8 @@ const geistSans = Geist({
 })
 
 export const metadata: Metadata = {
-  title: "Muhammad Irsyad - Full Stack Engineer",
-  description: "Fullstack Engineer based in Indonesia",
+  title: "Muhammad Irsyad - Software Engineer",
+  description: "Software Engineer based in Indonesia",
 };
 
 export default function RootLayout({
