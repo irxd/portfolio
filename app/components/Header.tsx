@@ -1,8 +1,8 @@
 'use client'
 
 import gsap from 'gsap'
-import Link from 'next/link'
 import { useEffect, useRef, useState } from 'react'
+import UnderlineLink from './UnderlineLink'
 
 export default function Header() {
   const lineRef = useRef<HTMLDivElement>(null)
@@ -55,23 +55,20 @@ export default function Header() {
         }`}
       >
         <div className="container mx-auto flex items-center text-sm md:text-base tracking-tight text-white">
-          <Link href="/">
+          <UnderlineLink href="/">
             <p>Muhammad Irsyad</p>
-          </Link>
+          </UnderlineLink>
           <div
             ref={lineRef}
             className="flex-grow mx-6 h-[1px] bg-foreground origin-left"
           ></div>
-          <nav className="space-x-6">
-            <a className="cursor-pointer" onClick={(e) => handleScroll(e, 'works')}>
+          <nav className="flex gap-6">
+            <UnderlineLink onClick={(e) => handleScroll(e, 'works')}>
               Works
-            </a>
-            <a
-              className="cursor-pointer"
-              onClick={(e) => handleScroll(e, 'contact')}
-            >
+            </UnderlineLink>
+            <UnderlineLink onClick={(e) => handleScroll(e, 'contact')}>
               Contact
-            </a>
+            </UnderlineLink>
           </nav>
         </div>
       </header>

@@ -1,8 +1,8 @@
 import localFont from 'next/font/local'
-import Link from 'next/link'
 import { twMerge } from 'tailwind-merge'
 import { selectedWorks } from '../data/works'
 import Container from './Container'
+import UnderlineLink from './UnderlineLink'
 import WorkDescription from './WorkDescription'
 import WorkTitle from './WorkTitle'
 
@@ -36,11 +36,12 @@ export default function SelectedWorks() {
           </article>
         ))}
 
-        <Link href="/works">
-          <div className={twMerge('text-3xl', redaction35Italic.className)}>
-            View All Works
-          </div>
-        </Link>
+        <UnderlineLink
+          href="/works"
+          className={twMerge('text-3xl', redaction35Italic.className)}
+        >
+          View All Works
+        </UnderlineLink>
       </div>
     </Container>
   )
