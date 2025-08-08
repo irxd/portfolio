@@ -1,6 +1,7 @@
 'use client'
 
 import gsap from 'gsap'
+import Link from 'next/link'
 import { useEffect, useRef, useState } from 'react'
 
 export default function Header() {
@@ -54,7 +55,9 @@ export default function Header() {
         }`}
       >
         <div className="container mx-auto flex items-center text-sm md:text-base tracking-tight text-white">
-          <p>Muhammad Irsyad</p>
+          <Link href="/">
+            <p>Muhammad Irsyad</p>
+          </Link>
           <div
             ref={lineRef}
             className="flex-grow mx-6 h-[1px] bg-foreground origin-left"

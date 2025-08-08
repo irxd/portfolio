@@ -3,6 +3,7 @@
 import gsap from 'gsap'
 import ScrollTrigger from 'gsap/ScrollTrigger'
 import localFont from 'next/font/local'
+import Link from 'next/link'
 import { useEffect, useRef } from 'react'
 import { twMerge } from 'tailwind-merge'
 import { selectedWorks } from '../data/works'
@@ -12,6 +13,10 @@ import WorkTitle from './WorkTitle'
 
 const redaction35Italic = localFont({
   src: '../fonts/Redaction_35-Italic.woff2',
+})
+
+const redaction20 = localFont({
+  src: '../fonts/Redaction_20-Regular.woff2',
 })
 
 export default function SelectedWorks() {
@@ -68,6 +73,12 @@ export default function SelectedWorks() {
             />
           </article>
         ))}
+
+        <Link href="/works">
+          <div className={twMerge('text-3xl', redaction35Italic.className)}>
+            View All Works
+          </div>
+        </Link>
       </div>
     </Container>
   )
