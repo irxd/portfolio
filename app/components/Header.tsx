@@ -1,6 +1,7 @@
 'use client'
 
 import gsap from 'gsap'
+import { usePathname } from 'next/navigation'
 import { useEffect, useRef, useState } from 'react'
 import UnderlineLink from './UnderlineLink'
 
@@ -8,6 +9,7 @@ export default function Header() {
   const lineRef = useRef<HTMLDivElement>(null)
   const [isVisible, setIsVisible] = useState(true)
   const [prevScrollPos, setPrevScrollPos] = useState(0)
+  const pathname = usePathname()
 
   const handleScroll = (e: React.MouseEvent<HTMLAnchorElement>, id: string) => {
     e.preventDefault()
@@ -55,9 +57,14 @@ export default function Header() {
         }`}
       >
         <div className="container mx-auto flex items-center text-sm md:text-base tracking-tight text-white">
-          <UnderlineLink href="/">
-            <p>Muhammad Irsyad</p>
-          </UnderlineLink>
+          {pathname === '/' ? (
+            <UnderlineLink onClick={(e) => handleScroll(e, 'hero')}>
+              Muhammad Irsyad
+            </UnderlineLink>
+          ) : (
+            <UnderlineLink href="/">Muhammad Irsyad</UnderlineLink>
+          )}
+
           <div
             ref={lineRef}
             className="flex-grow mx-6 h-[1px] bg-foreground origin-left"
