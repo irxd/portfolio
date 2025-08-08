@@ -51,7 +51,7 @@ export default function WorkTitle({
         />
         <p>{year}</p>
       </div>
-      <p className="text-[#cacaca] md:max-w-1/2">{companyDescription}</p>
+      <p className="text-[#cacaca] md:max-w-1/2 text-sm">{companyDescription}</p>
     </button>
   )
 }

@@ -55,25 +55,23 @@ export default function WorkDescription({
 
   return (
     <div ref={contentRef} className="overflow-hidden h-0" style={{ opacity: 0 }}>
-      <div className="space-y-4 text-sm md:text-base">
-        <div className="space-y-4 mt-8 mb-8 md:max-w-1/2">
-          <p>{workDescription}</p>
-          <p>{position}</p>
-          <p>{stack}</p>
-        </div>
-        <div className="flex flex-col md:flex-row gap-4">
-          {images.map((image) => (
-            <div key={image.id} className="w-full md:w-1/3">
-              <Image
-                width={600}
-                height={300}
-                src={image.src}
-                alt={image.alt}
-                className="w-full h-auto"
-              />
-            </div>
-          ))}
-        </div>
+      <div className="space-y-4 mt-8 mb-8 md:max-w-1/2">
+        <p className="text-sm md:text-base">{workDescription}</p>
+        <p className="text-sm">{position}</p>
+        <p className="text-sm">{stack}</p>
+      </div>
+      <div className="flex flex-col md:flex-row gap-4">
+        {images.map((image) => (
+          <div key={image.id} className="w-full md:w-1/3">
+            <Image
+              width={600}
+              height={300}
+              src={image.src}
+              alt={image.alt}
+              className="w-full h-auto"
+            />
+          </div>
+        ))}
       </div>
     </div>
   )
