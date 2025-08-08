@@ -22,7 +22,6 @@ export default function Footer() {
             >
               {`Let's Connect`}
             </h1>
-            <div className="flex-grow ml-6 h-[1px] bg-background" />
           </div>
           <div className="container mx-auto flex items-center mt-6 text-sm md:text-base text-black px-4 sm:px-0">
             <div className="flex flex-row space-x-6">

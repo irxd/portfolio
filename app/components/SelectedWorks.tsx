@@ -1,10 +1,5 @@
-'use client'
-
-import gsap from 'gsap'
-import ScrollTrigger from 'gsap/ScrollTrigger'
 import localFont from 'next/font/local'
 import Link from 'next/link'
-import { useEffect, useRef } from 'react'
 import { twMerge } from 'tailwind-merge'
 import { selectedWorks } from '../data/works'
 import Container from './Container'
@@ -16,41 +11,12 @@ const redaction35Italic = localFont({
 })
 
 export default function SelectedWorks() {
-  const lineRef = useRef<HTMLDivElement>(null)
-
-  useEffect(() => {
-    gsap.registerPlugin(ScrollTrigger)
-
-    if (lineRef.current) {
-      gsap.fromTo(
-        lineRef.current,
-        {
-          scaleX: 0,
-        },
-        {
-          scaleX: 1,
-          duration: 1.5,
-          ease: 'power3.inOut',
-          scrollTrigger: {
-            trigger: lineRef.current,
-            start: 'top bottom-=100',
-            toggleActions: 'play none none none',
-          },
-        },
-      )
-    }
-  }, [])
-
   return (
     <Container>
       <div className="flex items-center">
         <h1 className={twMerge('text-3xl md:text-6xl', redaction35Italic.className)}>
           Selected Works
         </h1>
-        <div
-          ref={lineRef}
-          className="flex-grow ml-6 h-[1px] bg-foreground origin-left"
-        />
       </div>
       <div className="space-y-16 md:space-y-32 mt-16 md:mt-24">
         {selectedWorks.map((work) => (
