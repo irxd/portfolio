@@ -1,9 +1,9 @@
 import localFont from 'next/font/local'
 import { twMerge } from 'tailwind-merge'
-import UnderlineLink from './UnderlineLink'
+import UnderlineLink from '../ui/UnderlineLink'
 
 const redaction35Italic = localFont({
-  src: '../fonts/Redaction_35-Italic.woff2',
+  src: '../../fonts/Redaction_35-Italic.woff2',
 })
 
 export default function Footer() {

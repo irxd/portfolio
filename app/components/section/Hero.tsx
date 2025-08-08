@@ -5,11 +5,11 @@ import { useEffect, useState } from 'react'
 import { twMerge } from 'tailwind-merge'
 
 const redaction35Italic = localFont({
-  src: '../fonts/Redaction_35-Italic.woff2',
+  src: '../../fonts/Redaction_35-Italic.woff2',
 })
 
 const redaction20 = localFont({
-  src: '../fonts/Redaction_20-Regular.woff2',
+  src: '../../fonts/Redaction_20-Regular.woff2',
 })
 
 export default function Hero() {

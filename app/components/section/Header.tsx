@@ -3,7 +3,7 @@
 import gsap from 'gsap'
 import { usePathname } from 'next/navigation'
 import { useEffect, useRef, useState } from 'react'
-import UnderlineLink from './UnderlineLink'
+import UnderlineLink from '../ui/UnderlineLink'
 
 export default function Header() {
   const lineRef = useRef<HTMLDivElement>(null)

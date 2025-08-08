@@ -1,13 +1,13 @@
 import localFont from 'next/font/local'
 import { twMerge } from 'tailwind-merge'
-import { selectedWorks } from '../data/works'
-import Container from './Container'
-import UnderlineLink from './UnderlineLink'
-import WorkDescription from './WorkDescription'
-import WorkTitle from './WorkTitle'
+import { selectedWorks } from '../../data/works'
+import Container from '../ui/Container'
+import UnderlineLink from '../ui/UnderlineLink'
+import WorkDescription from '../ui/WorkDescription'
+import WorkTitle from '../ui/WorkTitle'
 
 const redaction35Italic = localFont({
-  src: '../fonts/Redaction_35-Italic.woff2',
+  src: '../../fonts/Redaction_35-Italic.woff2',
 })
 
 export default function SelectedWorks() {

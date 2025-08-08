@@ -3,9 +3,9 @@
 import localFont from 'next/font/local'
 import { useState } from 'react'
 import { twMerge } from 'tailwind-merge'
-import Container from '../components/Container'
-import WorkDescription from '../components/WorkDescription'
-import WorkTitle from '../components/WorkTitle'
+import Container from '../components/ui/Container'
+import WorkDescription from '../components/ui/WorkDescription'
+import WorkTitle from '../components/ui/WorkTitle'
 import { allWorks } from '../data/works'
 
 const redaction35Italic = localFont({
