@@ -53,7 +53,7 @@ export default function Header() {
           isVisible ? 'translate-y-0' : '-translate-y-full'
         }`}
       >
-        <div className="container mx-auto flex items-center text-sm md:text-lg tracking-tight text-white">
+        <div className="container mx-auto flex items-center text-sm md:text-base tracking-tight text-white">
           <p>Muhammad Irsyad</p>
           <div
             ref={lineRef}
