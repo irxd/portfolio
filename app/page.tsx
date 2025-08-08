@@ -1,11 +1,11 @@
 import Hero from './components/Hero'
-import Works from './components/Works'
+import SelectedWorks from './components/SelectedWorks'
 
 export default function Home() {
   return (
     <div>
       <Hero />
-      <Works />
+      <SelectedWorks />
     </div>
   )
 }
