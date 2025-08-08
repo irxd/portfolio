@@ -1,19 +1,26 @@
-"use client";
+'use client'
 
-import gsap from 'gsap';
-import ScrollTrigger from 'gsap/ScrollTrigger';
-import { useEffect, useRef } from 'react';
+import gsap from 'gsap'
+import ScrollTrigger from 'gsap/ScrollTrigger'
+import { useEffect, useRef } from 'react'
 
 interface WorkTitleProps {
-  company: string;
-  year: string;
+  company: string
+  year: string
+  companyDescription: string
+  onClick?: () => void
 }
 
-export default function WorkTitle({ company, year }: WorkTitleProps) {
-  const lineRef = useRef<HTMLDivElement>(null);
+export default function WorkTitle({
+  company,
+  year,
+  companyDescription,
+  onClick,
+}: WorkTitleProps) {
+  const lineRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
-    gsap.registerPlugin(ScrollTrigger);
+    gsap.registerPlugin(ScrollTrigger)
 
     if (lineRef.current) {
       gsap.fromTo(
@@ -28,19 +35,23 @@ export default function WorkTitle({ company, year }: WorkTitleProps) {
           scrollTrigger: {
             trigger: lineRef.current,
             start: 'top bottom-=100',
-            toggleActions: 'play none none none'
-          }
-        }
-      );
+            toggleActions: 'play none none none',
+          },
+        },
+      )
     }
-  }, []);
+  }, [])
   return (
-    <div
-      className="flex items-center text-base font-bold tracking-tight"
-    >
-      <h2>{company}</h2>
-      <div ref={lineRef} className="flex-grow mx-6 h-[1px] bg-foreground origin-left" />
-      <p>{year}</p>
-    </div>
-  );
+    <button onClick={onClick} className="w-full text-left cursor-pointer">
+      <div className="flex items-center text-base font-bold tracking-tight">
+        <h2>{company}</h2>
+        <div
+          ref={lineRef}
+          className="flex-grow mx-6 h-[1px] bg-foreground origin-left"
+        />
+        <p>{year}</p>
+      </div>
+      <p className="text-[#cacaca] md:max-w-1/2">{companyDescription}</p>
+    </button>
+  )
 }

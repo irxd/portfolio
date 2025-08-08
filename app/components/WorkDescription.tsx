@@ -1,45 +1,80 @@
-import Image from "next/image";
+import gsap from 'gsap'
+import Image from 'next/image'
+import { useEffect, useRef } from 'react'
 
 interface WorkDescriptionProps {
-  companyDescription: string;
-  workDescription: string;
-  position: string;
-  stack: string;
+  workDescription: string
+  position: string
+  stack: string
   images: Array<{
-    id: number;
-    src: string;
-    alt: string;
+    id: number
+    src: string
+    alt: string
   }>
+  isActive: boolean
 }
 
 export default function WorkDescription({
-  companyDescription, workDescription, position, stack, images
+  workDescription,
+  position,
+  stack,
+  images,
+  isActive,
 }: WorkDescriptionProps) {
+  const contentRef = useRef<HTMLDivElement>(null)
+
+  useEffect(() => {
+    if (contentRef.current) {
+      if (isActive) {
+        gsap.fromTo(
+          contentRef.current,
+          {
+            height: 0,
+            opacity: 0,
+            y: -20,
+          },
+          {
+            height: 'auto',
+            opacity: 1,
+            y: 0,
+            duration: 0.5,
+            ease: 'power3.out',
+          },
+        )
+      } else {
+        gsap.to(contentRef.current, {
+          height: 0,
+          opacity: 0,
+          y: -20,
+          duration: 0.3,
+          ease: 'power3.in',
+        })
+      }
+    }
+  }, [isActive])
+
   return (
-    <div className="space-y-4 text-sm md:text-base">
-      <p className="text-[#cacaca] md:max-w-1/2">
-        {companyDescription}
-      </p>
-      <div className="space-y-4 mt-8 mb-8 md:max-w-1/2">
-        <p>
-          {workDescription}
-        </p>
-        <p>{position}</p>
-        <p>{stack}</p>
-      </div>
-      <div className="flex flex-col md:flex-row gap-4">
-        {images.map(image => (
-          <div key={image.id} className="w-full md:w-1/3">
-            <Image
-              width={600}
-              height={300}
-              src={image.src}
-              alt={image.alt}
-              className="w-full h-auto"
-            />
-          </div>
-        ))}
+    <div ref={contentRef} className="overflow-hidden h-0" style={{ opacity: 0 }}>
+      <div className="space-y-4 text-sm md:text-base">
+        <div className="space-y-4 mt-8 mb-8 md:max-w-1/2">
+          <p>{workDescription}</p>
+          <p>{position}</p>
+          <p>{stack}</p>
+        </div>
+        <div className="flex flex-col md:flex-row gap-4">
+          {images.map((image) => (
+            <div key={image.id} className="w-full md:w-1/3">
+              <Image
+                width={600}
+                height={300}
+                src={image.src}
+                alt={image.alt}
+                className="w-full h-auto"
+              />
+            </div>
+          ))}
+        </div>
       </div>
     </div>
-  );
+  )
 }
