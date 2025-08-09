@@ -5,27 +5,7 @@ export const selectedWorks = [
     year: '2025',
     companyDescription: 'Internet provider, Indonesia',
     works: [],
-    // workDescription:
-    //   'Developed and maintained firstmedia main website, revamped key promotional pages including homepage, resulting in improved performance and user experience. Enhanced multiple modules within custom internal CMS, supporting internal staff and marketing needs.',
     position: 'Fullstack',
-    // stack: 'React ▪ Next ▪ Typescript ▪ Jest ▪ Nest ▪ Redis ▪ Docker',
-    // // images: [
-    // //   {
-    // //     id: 1,
-    // //     src: '/images/fm-1.png',
-    // //     alt: 'First Media',
-    // //   },
-    // //   {
-    // //     id: 2,
-    // //     src: '/images/fm-2.png',
-    // //     alt: 'First Media',
-    // //   },
-    // //   {
-    // //     id: 3,
-    // //     src: '/images/fm-3.png',
-    // //     alt: 'First Media',
-    // //   },
-    // // ],
   },
   {
     id: 2,
@@ -33,27 +13,7 @@ export const selectedWorks = [
     year: '2024',
     companyDescription: 'Delivery platform, Malaysia',
     works: [],
-    // workDescription:
-    //   'Collaborated with internal team to revamp the customer platform. Migrating features from vue to react codebase, improving overall user experience and increasing customer satisfaction by addressing pain points in the legacy platform.',
     position: 'Frontend',
-    // stack: 'React ▪ Vue ▪ Next ▪ Typescript',
-    // images: [
-    //   {
-    //     id: 1,
-    //     src: '/images/pd-1.png',
-    //     alt: 'Parcel Daily',
-    //   },
-    //   {
-    //     id: 2,
-    //     src: '/images/pd-2.png',
-    //     alt: 'Parcel Daily',
-    //   },
-    //   {
-    //     id: 3,
-    //     src: '/images/pd-3.png',
-    //     alt: 'Parcel Daily',
-    //   },
-    // ],
   },
 ]
 
@@ -68,6 +28,8 @@ export const allWorks = [
         id: 1,
         title: 'E-Learning App for a Private University',
         description: `This multiplatform app (Android, iOS, HarmonyOS) started with two developers, but after the first six months, I handled the entire app side. When I joined this project, feature delivery was painfully slow, every new build required testers to reinstall APKs/IPAs, wasting hours. Drawing from my past experience, I built a proof-of-concept using CodePush to deliver updates instantly without full releases. After some extra late-night tinkering, the demo won the team over, and we cut delivery time by nearly 50%.
+
+        Another challenge was adjusting the UI for different orientations and ensuring responsiveness across multiple screen sizes, from phones to medium and large tablets. This required careful layout adjustments and thorough testing to maintain a consistent user experience.
 
         The app also needed testing on HarmonyOS, but no one had a Huawei device. I dug into Huawei’s DevEco Studio, found an older version that allowed local emulation, and got it working after days of forum-hunting (with the help of translation tools). This let testers validate features on HarmonyOS without hardware.`,
         stack:
@@ -107,33 +69,84 @@ export const allWorks = [
     ],
     position: 'Frontend',
   },
-  // {
-  //   id: 2,
-  //   company: 'Linknet',
-  //   year: '2025',
-  //   companyDescription: 'Internet provider, Indonesia',
-  //   workDescription:
-  //     'Collaborated with internal team to revamp the customer platform. Migrating features from vue to react codebase, improving overall user experience and increasing customer satisfaction by addressing pain points in the legacy platform.',
-  //   position: 'Frontend',
-  //   stack: 'React ▪ Vue ▪ Next ▪ Typescript',
-  //   images: [
-  //     {
-  //       id: 1,
-  //       src: '/images/pd-1.png',
-  //       alt: 'Parcel Daily',
-  //     },
-  //     {
-  //       id: 2,
-  //       src: '/images/pd-2.png',
-  //       alt: 'Parcel Daily',
-  //     },
-  //     {
-  //       id: 3,
-  //       src: '/images/pd-3.png',
-  //       alt: 'Parcel Daily',
-  //     },
-  //   ],
-  // },
+  {
+    id: 2,
+    company: 'Linknet',
+    year: '2023 - 2025',
+    companyDescription: 'Internet provider, Indonesia',
+    works: [
+      {
+        id: 1,
+        title: 'First Media Website',
+        description: `First Media is one of the largest internet providers in Indonesia, with hundreds of thousands of monthly web visits. As an external vendor, I fully managed the company’s website and its custom internal CMS. My work included developing the self-registration module, building dynamic marketing pages, fixing bugs in existing features and revamping key pages including the homepage to improve performance and user experience. I also enhanced multiple CMS modules to better support internal staff and marketing teams, and handled backend tasks related to the features I built.
+
+        A key challenge was dealing with incomplete or frequently changing requirements. To address this, I carefully reviewed designs, asked clarifying questions, and gathered additional information before developing new features, ensuring the final output matched expectations.`,
+        stack:
+          'React ▪ Next ▪ Typescript ▪ Jest ▪ React Testing Library ▪ Nest ▪ Redis ▪ Docker',
+        images: [
+          {
+            id: 1,
+            src: '/images/fm-1.png',
+            alt: 'First Media',
+          },
+          {
+            id: 2,
+            src: '/images/fm-2.png',
+            alt: 'First Media',
+          },
+          {
+            id: 3,
+            src: '/images/fm-3.png',
+            alt: 'First Media',
+          },
+        ],
+      },
+      {
+        id: 2,
+        title: 'Suara Pembaruan Website',
+        description: `Suara Pembaruan is a news portal where I was hired to maintain the website and its CMS. My responsibilities included monitoring and maintaining the web container to ensure smooth operations, as well as fixing bugs on both the news portal and its CMS.
+
+        One challenge was that it was my first time managing a web container, and the CMS was built with SolidJS, a library I had never used before. Through quick learning and hands-on problem solving, I was able to work effectively on the CMS and resolve issues without disruption.`,
+        stack: 'Solid ▪ Vue ▪ Nuxt ▪ Typescript ▪ Parse ▪ Docker ▪ Portainer',
+        images: [],
+      },
+    ],
+    position: 'Fullstack',
+  },
+  {
+    id: 3,
+    company: 'Parcel Daily',
+    year: '2024',
+    companyDescription: 'Courier and delivery platform, Malaysia',
+    works: [
+      {
+        id: 1,
+        title: 'Parcel Daily Customer Platform',
+        description: `This platform is used by customers (partners) to access Parcel Daily’s services. The existing platform was built with Vue but had an outdated design and tech stack. The company decided to revamp it with a new design, new stack and streamlined user flows. I was brought in to help migrate features from the old platform to the new one, working closely with the existing developer.
+
+        A key challenge was understanding the context of each feature from the old platform. I reviewed the legacy code, tested existing features, and then reimplemented them in the new platform with the updated design. The migration was a success, with nearly half of the user base switching to the new platform within two weeks.`,
+        stack: 'React ▪ Vue ▪ Next ▪ Typescript ▪ Tailwind',
+        images: [
+          {
+            id: 1,
+            src: '/images/pd-1.png',
+            alt: 'Parcel Daily',
+          },
+          {
+            id: 2,
+            src: '/images/pd-2.png',
+            alt: 'Parcel Daily',
+          },
+          {
+            id: 3,
+            src: '/images/pd-3.png',
+            alt: 'Parcel Daily',
+          },
+        ],
+      },
+    ],
+    position: 'Frontend',
+  },
   // {
   //   id: 3,
   //   company: 'Parcel Daily',
