@@ -1,18 +1,71 @@
 export const selectedWorks = [
   {
     id: 1,
-    company: 'First Media',
-    year: '2025',
+    company: 'Linknet',
+    year: '2023 - 2025',
     companyDescription: 'Internet provider, Indonesia',
-    works: [],
+    works: [
+      {
+        id: 1,
+        title: 'First Media Website',
+        description: `First Media is one of the largest internet providers in Indonesia, with hundreds of thousands of monthly web visits. As an external vendor, I fully managed the company’s website and its custom internal CMS. My work included developing the self-registration module, building dynamic marketing pages, fixing bugs in existing features and revamping key pages including the homepage to improve performance and user experience. I also enhanced multiple CMS modules to better support internal staff and marketing teams, and handled backend tasks related to the features I built.
+
+        A key challenge was dealing with incomplete or frequently changing requirements. To address this, I carefully reviewed designs, asked clarifying questions, and gathered additional information before developing new features, ensuring the final output matched expectations.`,
+        stack:
+          'React ▪ Next ▪ Typescript ▪ Jest ▪ React Testing Library ▪ Nest ▪ Redis ▪ Docker',
+        images: [
+          {
+            id: 1,
+            src: '/images/fm-1.png',
+            alt: 'First Media',
+          },
+          {
+            id: 2,
+            src: '/images/fm-2.png',
+            alt: 'First Media',
+          },
+          {
+            id: 3,
+            src: '/images/fm-3.png',
+            alt: 'First Media',
+          },
+        ],
+      },
+    ],
     position: 'Fullstack',
   },
   {
     id: 2,
     company: 'Parcel Daily',
     year: '2024',
-    companyDescription: 'Delivery platform, Malaysia',
-    works: [],
+    companyDescription: 'Courier and delivery platform, Malaysia',
+    works: [
+      {
+        id: 1,
+        title: 'Parcel Daily Customer Platform',
+        description: `This platform is used by customers (partners) to access Parcel Daily’s services. The existing platform was built with Vue but had an outdated design and tech stack. The company decided to revamp it with a new design, new stack and streamlined user flows. I was brought in to help migrate features from the old platform to the new one, working closely with the existing developer.
+
+        A key challenge was understanding the context of each feature from the old platform. I reviewed the legacy code, tested existing features, and then reimplemented them in the new platform with the updated design. The migration was a success, with nearly half of the user base switching to the new platform within two weeks.`,
+        stack: 'React ▪ Vue ▪ Next ▪ Typescript ▪ Tailwind',
+        images: [
+          {
+            id: 1,
+            src: '/images/pd-1.png',
+            alt: 'Parcel Daily',
+          },
+          {
+            id: 2,
+            src: '/images/pd-2.png',
+            alt: 'Parcel Daily',
+          },
+          {
+            id: 3,
+            src: '/images/pd-3.png',
+            alt: 'Parcel Daily',
+          },
+        ],
+      },
+    ],
     position: 'Frontend',
   },
 ]
@@ -21,7 +74,7 @@ export const allWorks = [
   {
     id: 1,
     company: 'RightCliq Solutions',
-    year: '2023 - 2025',
+    year: '2023 - Now',
     companyDescription: 'Software development, Malaysia',
     works: [
       {
@@ -147,28 +200,40 @@ export const allWorks = [
     ],
     position: 'Frontend',
   },
-  // {
-  //   id: 3,
-  //   company: 'Parcel Daily',
-  //   year: '2024',
-  //   companyDescription: 'Courier and delivery platform, Malaysia',
-  //   workDescription:
-  //     'Collaborated with internal team to revamp the customer platform. Migrating features from vue to react codebase, improving overall user experience and increasing customer satisfaction by addressing pain points in the legacy platform.',
-  //   position: 'Frontend',
-  //   stack: 'React ▪ Vue ▪ Next ▪ Typescript',
-  //   images: [],
-  // },
-  // {
-  //   id: 4,
-  //   company: 'Stealth Startup',
-  //   year: '2024',
-  //   companyDescription: 'Security compliance platform, Indonesia',
-  //   workDescription:
-  //     'Collaborated with internal team to revamp the customer platform. Migrating features from vue to react codebase, improving overall user experience and increasing customer satisfaction by addressing pain points in the legacy platform.',
-  //   position: 'Frontend',
-  //   stack: 'React ▪ Vue ▪ Next ▪ Typescript',
-  //   images: [],
-  // },
+  {
+    id: 4,
+    company: 'Stealth Startup',
+    year: '2024',
+    companyDescription: 'Cybersecurity, Indonesia',
+    works: [
+      {
+        id: 1,
+        title: 'Security Compliance Platform',
+        description: `I was hired to help build a new platform for managing security compliance and risk management for companies. One challenge during development was the inconsistent code style, some existing modules used clean architecture, while others followed a more common approach. After careful review, I chose the more common approach for new modules. While clean architecture looked appealing, its implementation was overly complex, taking almost twice as many steps for the same functionality, and risked over-engineering the solution.
+
+        Another challenge was that certain design components didn’t align with the existing component library. To address this, I manually adjusted the default components to match the intended design, ensuring visual consistency across the platform.`,
+        stack: 'React ▪ Next ▪ Typescript',
+        images: [],
+      },
+    ],
+    position: 'Frontend',
+  },
+  {
+    id: 5,
+    company: 'Warung Pintar',
+    year: '2020 - 2023',
+    companyDescription: 'Micro retail and distribution, Indonesia',
+    works: [
+      {
+        id: 1,
+        title: 'Trade Marketing Squad',
+        description: ``,
+        stack: 'React ▪ Next ▪ Typescript',
+        images: [],
+      },
+    ],
+    position: 'Frontend',
+  },
   // {
   //   id: 5,
   //   company: 'Warung Pintar',
