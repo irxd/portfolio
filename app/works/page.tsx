@@ -13,7 +13,13 @@ const redaction35Italic = localFont({
 })
 
 export default function Works() {
-  const [activeWorkId, setActiveWorkId] = useState<number | null>(null)
+  const [activeWorkIds, setActiveWorkIds] = useState<number[]>([])
+
+  const toggleWork = (id: number) => {
+    setActiveWorkIds((prev) =>
+      prev.includes(id) ? prev.filter((workId) => workId !== id) : [...prev, id],
+    )
+  }
 
   return (
     <Container>
@@ -30,13 +36,11 @@ export default function Works() {
               year={work.year}
               companyDescription={work.companyDescription}
               position={work.position}
-              onClick={() =>
-                setActiveWorkId(activeWorkId === work.id ? null : work.id)
-              }
+              onClick={() => toggleWork(work.id)}
             />
             <WorkDescription
               works={work.works}
-              isActive={activeWorkId === work.id}
+              isActive={activeWorkIds.includes(work.id)}
             />
           </article>
         ))}
