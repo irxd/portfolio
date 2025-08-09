@@ -29,15 +29,13 @@ export default function Works() {
               company={work.company}
               year={work.year}
               companyDescription={work.companyDescription}
+              position={work.position}
               onClick={() =>
                 setActiveWorkId(activeWorkId === work.id ? null : work.id)
               }
             />
             <WorkDescription
-              workDescription={work.workDescription}
-              position={work.position}
-              stack={work.stack}
-              images={work.images}
+              works={work.works}
               isActive={activeWorkId === work.id}
             />
           </article>

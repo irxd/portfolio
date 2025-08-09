@@ -25,14 +25,9 @@ export default function SelectedWorks() {
               company={work.company}
               year={work.year}
               companyDescription={work.companyDescription}
-            />
-            <WorkDescription
-              workDescription={work.workDescription}
               position={work.position}
-              stack={work.stack}
-              images={work.images}
-              isActive={true}
             />
+            <WorkDescription works={work.works} isActive={true} />
           </article>
         ))}
 
