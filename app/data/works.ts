@@ -227,8 +227,24 @@ export const allWorks = [
       {
         id: 1,
         title: 'Trade Marketing Squad',
-        description: ``,
-        stack: 'React ▪ Next ▪ Typescript',
+        description: `This was the first squad I joined at Warung Pintar. For a period of time, I was the only engineer in the squad, handling all feature development on both the app side and internal CMS while collaborating with the product manager, data analyst, and product operations team.
+
+        Key projects included:
+        Iklan Pintar - a platform for brands to advertise in the traditional trade market, providing additional income for small shop owners.
+        Trader Center Sales App - a tool for the sales team to manage trader (large-scale buyer) visit schedules and purchasing activities.
+
+        One challenge early on was ensuring requirements were technically feasible, especially while working as the sole engineer. I addressed this by actively coordinating with engineers from other squads to validate technical possibilities before development.`,
+        stack: 'React ▪ React Native ▪ Next ▪ Typescript',
+        images: [],
+      },
+      {
+        id: 2,
+        title: 'Core & Acquisition Squad',
+        description: `In this squad, I worked on integrating a third-party service for analytics and customer engagement into the main app, Aplikasi Warung Pintar. Although the integration wasn’t initially my responsibility, I noticed ongoing issues in daily standups and offered to help. After tinkering, running trial-and-error tests, and collaborating with the third-party integration engineer, I successfully resolved the problems and completed the integration. I also contributed to acquisition-related features, including onboarding and the help section.
+
+        During this period, I initiated and contributed to the development of Renceng Native, a new React Native UI kit for the main app collaborated with UI/UX and frontend chapter. The existing UI kit had no active maintainers, limited documentation, and issues with certain components, especially during unit testing. I proposed building a replacement that addressed these problems. After the initial development, more engineers joined the effort, and we released an early version. The migration from the old UI kit to the new one was smooth because we maintained the same API/usage, minimizing code changes in the main app. To further improve the developer experience, I integrated Storybook, enabling the team to view component documentation and usage examples without manually checking the source code.`,
+        stack:
+          'React ▪ React Native ▪ Next ▪ Typescript ▪ Jest ▪ React Native Testing Library ▪ Storybook',
         images: [],
       },
     ],
