@@ -1,11 +1,11 @@
-import Hero from './components/Hero';
-import Works from './components/Works';
+import Hero from './components/section/Hero'
+import SelectedWorks from './components/section/SelectedWorks'
 
 export default function Home() {
   return (
-    <div className="bg-foreground">
+    <div>
       <Hero />
-      <Works />
+      <SelectedWorks />
     </div>
-  );
+  )
 }
