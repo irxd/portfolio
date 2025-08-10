@@ -234,7 +234,8 @@ export const allWorks = [
         Trader Center Sales App - a tool for the sales team to manage trader (large-scale buyer) visit schedules and purchasing activities.
 
         One challenge early on was ensuring requirements were technically feasible, especially while working as the sole engineer. I addressed this by actively coordinating with engineers from other squads to validate technical possibilities before development.`,
-        stack: 'React ▪ React Native ▪ Next ▪ Typescript',
+        stack:
+          'React ▪ React Native ▪ Next ▪ Typescript ▪ GraphQL ▪ Jest ▪ React Native Testing Library',
         images: [],
       },
       {
@@ -244,43 +245,58 @@ export const allWorks = [
 
         During this period, I initiated and contributed to the development of Renceng Native, a new React Native UI kit for the main app collaborated with UI/UX and frontend chapter. The existing UI kit had no active maintainers, limited documentation, and issues with certain components, especially during unit testing. I proposed building a replacement that addressed these problems. After the initial development, more engineers joined the effort, and we released an early version. The migration from the old UI kit to the new one was smooth because we maintained the same API/usage, minimizing code changes in the main app. To further improve the developer experience, I integrated Storybook, enabling the team to view component documentation and usage examples without manually checking the source code.`,
         stack:
-          'React ▪ React Native ▪ Next ▪ Typescript ▪ Jest ▪ React Native Testing Library ▪ Storybook',
+          'React ▪ React Native ▪ Next ▪ Typescript ▪ GraphQL ▪ Jest ▪ React Native Testing Library ▪ Storybook',
         images: [],
       },
     ],
     position: 'Frontend',
   },
-  // {
-  //   id: 5,
-  //   company: 'Warung Pintar',
-  //   year: '2023',
-  //   companyDescription: 'Micro retail and distribution, Indonesia',
-  //   workDescription:
-  //     'Collaborated with internal team to revamp the customer platform. Migrating features from vue to react codebase, improving overall user experience and increasing customer satisfaction by addressing pain points in the legacy platform.',
-  //   position: 'Frontend',
-  //   stack: 'React ▪ Vue ▪ Next ▪ Typescript',
-  //   images: [],
-  // },
-  // {
-  //   id: 6,
-  //   company: 'Bizzy',
-  //   year: '2020',
-  //   companyDescription: 'B2B marketplace and e-procurement, Indonesia',
-  //   workDescription:
-  //     'Collaborated with internal team to revamp the customer platform. Migrating features from vue to react codebase, improving overall user experience and increasing customer satisfaction by addressing pain points in the legacy platform.',
-  //   position: 'Frontend',
-  //   stack: 'React ▪ Vue ▪ Next ▪ Typescript',
-  //   images: [],
-  // },
-  // {
-  //   id: 7,
-  //   company: 'Babyloania',
-  //   year: '2018',
-  //   companyDescription: 'Rental marketplace for baby and kids products, Indonesia',
-  //   workDescription:
-  //     'Collaborated with internal team to revamp the customer platform. Migrating features from vue to react codebase, improving overall user experience and increasing customer satisfaction by addressing pain points in the legacy platform.',
-  //   position: 'Frontend',
-  //   stack: 'React ▪ Vue ▪ Next ▪ Typescript',
-  //   images: [],
-  // },
+  {
+    id: 6,
+    company: 'Bizzy',
+    year: '2018 - 2020',
+    companyDescription: 'B2B marketplace and e-procurement, Indonesia',
+    works: [
+      {
+        id: 1,
+        title: 'Bizzy Commerce',
+        description: `I joined the team responsible for maintaining Warehouse Management features, which involved developing a microservice to handle all related operations as well as implementing features on the marketplace side. I also developed an order tracker to help the internal team monitor order status across platforms and built messaging features to enable communication between vendors and customers on the platform.`,
+        stack: 'Node ▪ Vue ▪ Nuxt ▪ Mocha ▪ Redis ▪ MySQL ▪ MongoDB',
+        images: [],
+      },
+      {
+        id: 2,
+        title: 'Bizzy Marketplace',
+        description: `I joined the team responsible for developing the revamped marketplace. During this time, my role shifted from a backend focus to primarily frontend development, where I began working extensively with React.`,
+        stack: 'React ▪ Next ▪ Typescript ▪ Jest ▪ React Native Testing Library',
+        images: [],
+      },
+      {
+        id: 3,
+        title: 'Bizzy Distribution',
+        description: `I joined the team responsible for developing the distribution side of the platform, working primarily on vendor management modules and also contributing to product management and other related modules. A key challenge was adapting quickly to a new environment while delivering features under tight deadlines.`,
+        stack: 'React ▪ Typescript ▪ Jest ▪ React Native Testing Library',
+        images: [],
+      },
+    ],
+    position: 'Fullstack',
+  },
+  {
+    id: 7,
+    company: 'Babyloania',
+    year: '2016 - 2018',
+    companyDescription: 'Rental marketplace, Indonesia',
+    works: [
+      {
+        id: 1,
+        title: 'Babyloania Rental Marketplace',
+        description: `This is where my journey as a software engineer truly began, starting from not knowing what APIs and Git were to handling end-to-end development independently. I managed all microservices, including user, product, and order services, and developed both the CMS and marketplace. I also actively participated in design reviews and product development ideation, helping shape new features and improve the overall user experience.
+
+        Through this role, I not only gained full-stack development experience but also helped streamline internal processes and deliver product improvements that enhanced platform usability for both customers and internal staffs.`,
+        stack: 'Node ▪ Meteor ▪ Redis ▪ Elasticsearch ▪ MongoDB ▪ Docker',
+        images: [],
+      },
+    ],
+    position: 'Fullstack',
+  },
 ]
