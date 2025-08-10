@@ -103,7 +103,7 @@ export default function WorkDescription({ works, isActive }: WorkDescriptionProp
                         key={image.id}
                         className={twMerge(
                           'w-full',
-                          image.type === 'app' ? 'md:w-1/8' : 'md:w-1/3',
+                          image.type === 'app' ? 'md:w-1/6' : 'md:w-1/3',
                         )}
                       >
                         <Image
@@ -124,7 +124,7 @@ export default function WorkDescription({ works, isActive }: WorkDescriptionProp
                       key={image.id}
                       className={twMerge(
                         'w-full',
-                        image.type === 'app' ? 'md:w-1/8' : 'md:w-1/3',
+                        image.type === 'app' ? 'md:w-1/6' : 'md:w-1/3',
                       )}
                     >
                       <Image
