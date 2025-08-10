@@ -68,7 +68,7 @@ export default function WorkDescription({ works, isActive }: WorkDescriptionProp
         >
           <div className="space-y-4 mt-8">
             <div className="text-sm md:text-base">{work.title}</div>
-            <div className="text-sm md:text-base whitespace-pre-line text-justify">
+            <div className="text-sm md:text-base whitespace-pre-line text-justify w-full md:w-1/2">
               {work.description}
             </div>
             <p className="text-sm text-[#cacaca]">{work.stack}</p>
