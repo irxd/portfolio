@@ -59,26 +59,28 @@ export default function WorkDescription({ works, isActive }: WorkDescriptionProp
           key={work.id}
           className={`mb-16 ${index !== works.length - 1 ? 'border-b border-dashed border-[#666666] pb-16' : ''}`}
         >
-          <div className="space-y-4 mt-8 mb-8">
+          <div className="space-y-4 mt-8">
             <div className="text-sm md:text-base">{work.title}</div>
             <div className="text-sm md:text-base whitespace-pre-line text-justify">
               {work.description}
             </div>
-            <p className="text-sm">{work.stack}</p>
+            <p className="text-sm text-[#cacaca]">{work.stack}</p>
           </div>
-          <div className="flex flex-col md:flex-row gap-4">
-            {work.images?.map((image) => (
-              <div key={image.id} className="w-full md:w-1/3">
-                <Image
-                  width={600}
-                  height={300}
-                  src={image.src}
-                  alt={image.alt}
-                  className="w-full h-auto"
-                />
-              </div>
-            ))}
-          </div>
+          {work.images?.length > 0 && (
+            <div className="flex flex-col md:flex-row gap-4 mt-16">
+              {work.images?.map((image) => (
+                <div key={image.id} className="w-full md:w-1/3">
+                  <Image
+                    width={600}
+                    height={300}
+                    src={image.src}
+                    alt={image.alt}
+                    className="w-full h-auto"
+                  />
+                </div>
+              ))}
+            </div>
+          )}
         </div>
       ))}
     </div>

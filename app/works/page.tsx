@@ -28,7 +28,7 @@ export default function Works() {
           All Works
         </h1>
       </div>
-      <div className="space-y-16 md:space-y-16 mt-16 md:mt-24">
+      <div className="space-y-4 mt-16 md:mt-24">
         {allWorks.map((work) => (
           <article key={work.id}>
             <WorkTitle

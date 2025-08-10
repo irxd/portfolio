@@ -3,7 +3,7 @@ export default function Container({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <div className="min-h-screen bg-background text-white relative" id="works">
-      <div className="container mx-auto pb-24 md:pb-64 pt-16 md:pt-32 px-4 sm:px-0">
+      <div className="container mx-auto pb-24 md:pb-64 pt-32 md:pt-32 px-4 sm:px-0">
         {children}
       </div>
       <div className="h-[2vw] w-[2vw] bg-foreground absolute bottom-0" />
