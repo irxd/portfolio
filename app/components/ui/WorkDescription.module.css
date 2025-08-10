@@ -1,0 +1,21 @@
+.container :global(.swiper) {
+  padding-bottom: 40px !important;
+}
+
+.container :global(.swiper-pagination) {
+  bottom: 0 !important;
+}
+
+.container :global(.swiper-pagination-bullet) {
+  width: 24px !important;
+  height: 2px !important;
+  border-radius: 0 !important;
+  background-color: #666666;
+  opacity: 0.5;
+  margin: 0 4px !important;
+}
+
+.container :global(.swiper-pagination-bullet-active) {
+  background-color: #ffffff;
+  opacity: 1;
+}

@@ -87,7 +87,26 @@ export const allWorks = [
         The app also needed testing on HarmonyOS, but no one had a Huawei device. I dug into Huawei’s DevEco Studio, found an older version that allowed local emulation, and got it working after days of forum-hunting (with the help of translation tools). This let testers validate features on HarmonyOS without hardware.`,
         stack:
           'React Native ▪ Typescript ▪ Jest ▪ React Native Testing Library ▪ Firebase',
-        images: [],
+        images: [
+          {
+            id: 1,
+            src: '/images/rq-1.png',
+            alt: 'Right Cliq',
+            type: 'app',
+          },
+          {
+            id: 2,
+            src: '/images/rq-2.png',
+            alt: 'Right Cliq',
+            type: 'app',
+          },
+          {
+            id: 3,
+            src: '/images/rq-3.png',
+            alt: 'Right Cliq',
+            type: 'app',
+          },
+        ],
       },
       {
         id: 2,
@@ -161,7 +180,13 @@ export const allWorks = [
 
         One challenge was that it was my first time managing a web container, and the CMS was built with SolidJS, a library I had never used before. Through quick learning and hands-on problem solving, I was able to work effectively on the CMS and resolve issues without disruption.`,
         stack: 'Solid ▪ Vue ▪ Nuxt ▪ Typescript ▪ Parse ▪ Docker ▪ Portainer',
-        images: [],
+        images: [
+          {
+            id: 1,
+            src: '/images/sp-1.png',
+            alt: 'Suara Pembaruan',
+          },
+        ],
       },
     ],
     position: 'Fullstack',
@@ -246,7 +271,26 @@ export const allWorks = [
         During this period, I initiated and contributed to the development of Renceng Native, a new React Native UI kit for the main app collaborated with UI/UX and frontend chapter. The existing UI kit had no active maintainers, limited documentation, and issues with certain components, especially during unit testing. I proposed building a replacement that addressed these problems. After the initial development, more engineers joined the effort, and we released an early version. The migration from the old UI kit to the new one was smooth because we maintained the same API/usage, minimizing code changes in the main app. To further improve the developer experience, I integrated Storybook, enabling the team to view component documentation and usage examples without manually checking the source code.`,
         stack:
           'React ▪ React Native ▪ Next ▪ Typescript ▪ GraphQL ▪ Jest ▪ React Native Testing Library ▪ Storybook',
-        images: [],
+        images: [
+          {
+            id: 1,
+            src: '/images/wp-1.png',
+            alt: 'Warung Pintar',
+            type: 'app',
+          },
+          {
+            id: 2,
+            src: '/images/wp-2.png',
+            alt: 'Warung Pintar',
+            type: 'app',
+          },
+          {
+            id: 3,
+            src: '/images/wp-3.png',
+            alt: 'Warung Pintar',
+            type: 'app',
+          },
+        ],
       },
     ],
     position: 'Frontend',
@@ -262,7 +306,13 @@ export const allWorks = [
         title: 'Bizzy Commerce',
         description: `I joined the team responsible for maintaining Warehouse Management features, which involved developing a microservice to handle all related operations as well as implementing features on the marketplace side. I also developed an order tracker to help the internal team monitor order status across platforms and built messaging features to enable communication between vendors and customers on the platform.`,
         stack: 'Node ▪ Vue ▪ Nuxt ▪ Mocha ▪ Redis ▪ MySQL ▪ MongoDB',
-        images: [],
+        images: [
+          {
+            id: 1,
+            src: '/images/bz-1.png',
+            alt: 'Bizzy',
+          },
+        ],
       },
       {
         id: 2,
@@ -292,7 +342,7 @@ export const allWorks = [
         title: 'Babyloania Rental Marketplace',
         description: `This is where my journey as a software engineer truly began, starting from not knowing what APIs and Git were to handling end-to-end development independently. I managed all microservices, including user, product, and order services, and developed both the CMS and marketplace. I also actively participated in design reviews and product development ideation, helping shape new features and improve the overall user experience.
 
-        Through this role, I not only gained full-stack development experience but also helped streamline internal processes and deliver product improvements that enhanced platform usability for both customers and internal staffs.`,
+        Through this role, I not only gained fullstack development experience but also helped streamline internal processes and deliver product improvements that enhanced platform usability for both customers and internal staffs.`,
         stack: 'Node ▪ Meteor ▪ Redis ▪ Elasticsearch ▪ MongoDB ▪ Docker',
         images: [],
       },

@@ -3,6 +3,12 @@
 import gsap from 'gsap'
 import Image from 'next/image'
 import { useEffect, useRef } from 'react'
+import 'swiper/css'
+import 'swiper/css/pagination'
+import { Pagination } from 'swiper/modules'
+import { Swiper, SwiperSlide } from 'swiper/react'
+import { twMerge } from 'tailwind-merge'
+import styles from './WorkDescription.module.css'
 
 interface WorkDescriptionProps {
   works: Array<{
@@ -14,6 +20,7 @@ interface WorkDescriptionProps {
       id: number
       src: string
       alt: string
+      type?: string
     }>
   }>
   isActive: boolean
@@ -67,18 +74,70 @@ export default function WorkDescription({ works, isActive }: WorkDescriptionProp
             <p className="text-sm text-[#cacaca]">{work.stack}</p>
           </div>
           {work.images?.length > 0 && (
-            <div className="flex flex-col md:flex-row gap-4 mt-16">
-              {work.images?.map((image) => (
-                <div key={image.id} className="w-full md:w-1/3">
-                  <Image
-                    width={600}
-                    height={300}
-                    src={image.src}
-                    alt={image.alt}
-                    className="w-full h-auto"
-                  />
+            <div className="mt-16">
+              {work.images.some((img) => img.type === 'app') ? (
+                <div className="block md:flex md:flex-row md:gap-4">
+                  <div className={twMerge('md:hidden w-full', styles.container)}>
+                    <Swiper
+                      modules={[Pagination]}
+                      pagination={{ clickable: true }}
+                      spaceBetween={20}
+                      className="w-full"
+                    >
+                      {work.images.map((image) => (
+                        <SwiperSlide key={image.id}>
+                          <Image
+                            width={600}
+                            height={300}
+                            src={image.src}
+                            alt={image.alt}
+                            className="w-full h-auto"
+                          />
+                        </SwiperSlide>
+                      ))}
+                    </Swiper>
+                  </div>
+                  <div className="hidden md:flex md:flex-row md:gap-4">
+                    {work.images.map((image) => (
+                      <div
+                        key={image.id}
+                        className={twMerge(
+                          'w-full',
+                          image.type === 'app' ? 'md:w-1/8' : 'md:w-1/3',
+                        )}
+                      >
+                        <Image
+                          width={600}
+                          height={300}
+                          src={image.src}
+                          alt={image.alt}
+                          className="w-full h-auto"
+                        />
+                      </div>
+                    ))}
+                  </div>
                 </div>
-              ))}
+              ) : (
+                <div className="flex flex-col md:flex-row gap-4">
+                  {work.images.map((image) => (
+                    <div
+                      key={image.id}
+                      className={twMerge(
+                        'w-full',
+                        image.type === 'app' ? 'md:w-1/8' : 'md:w-1/3',
+                      )}
+                    >
+                      <Image
+                        width={600}
+                        height={300}
+                        src={image.src}
+                        alt={image.alt}
+                        className="w-full h-auto"
+                      />
+                    </div>
+                  ))}
+                </div>
+              )}
             </div>
           )}
         </div>
