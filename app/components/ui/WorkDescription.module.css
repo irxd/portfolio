@@ -1,12 +1,12 @@
-:global(.swiper) {
+.container :global(.swiper) {
   padding-bottom: 40px !important;
 }
 
-:global(.swiper-pagination) {
+.container :global(.swiper-pagination) {
   bottom: 0 !important;
 }
 
-:global(.swiper-pagination-bullet) {
+.container :global(.swiper-pagination-bullet) {
   width: 24px !important;
   height: 2px !important;
   border-radius: 0 !important;
@@ -15,7 +15,7 @@
   margin: 0 4px !important;
 }
 
-:global(.swiper-pagination-bullet-active) {
+.container :global(.swiper-pagination-bullet-active) {
   background-color: #ffffff;
   opacity: 1;
 }

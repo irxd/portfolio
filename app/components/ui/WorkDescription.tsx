@@ -8,7 +8,7 @@ import 'swiper/css/pagination'
 import { Pagination } from 'swiper/modules'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { twMerge } from 'tailwind-merge'
-import './WorkDescription.module.css'
+import styles from './WorkDescription.module.css'
 
 interface WorkDescriptionProps {
   works: Array<{
@@ -77,7 +77,7 @@ export default function WorkDescription({ works, isActive }: WorkDescriptionProp
             <div className="mt-16">
               {work.images.some((img) => img.type === 'app') ? (
                 <div className="block md:flex md:flex-row md:gap-4">
-                  <div className="md:hidden w-full">
+                  <div className={twMerge('md:hidden w-full', styles.container)}>
                     <Swiper
                       modules={[Pagination]}
                       pagination={{ clickable: true }}
