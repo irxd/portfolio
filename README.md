@@ -9,7 +9,7 @@ My personal portfolio website built with Next.js 15
 
 ## To Do
 
-- [ ] Add works page
+- [x] Add works page
 - [ ] Implement reveal animation on work content
 - [ ] Add more info on footer
 
