@@ -52,7 +52,7 @@ export default function Header() {
   return (
     <>
       <header
-        className={`py-6 fixed top-0 z-10 bg-background px-4 sm:px-0 w-full transition-transform duration-300 ${
+        className={`py-6 fixed top-0 z-11 bg-background px-4 sm:px-0 w-full transition-transform duration-300 ${
           isVisible ? 'translate-y-0' : '-translate-y-full'
         }`}
       >
